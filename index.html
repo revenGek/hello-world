@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Test de geolocalización</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="style.css"><!---->
+
+  <!-- jQuery and jQuery Mobile -->
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+<!-- google maps API -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+<!-- phonegap API-->
+<script src="cordova.js"></script>
+
+<!-- gmaps API-->
+<script src="gmaps.js"></script>
+
+
+
+</head> 
+
+<body>		
+<div data-role="page" id="page1">
+    <div data-theme="" data-role="header" data-position="fixed">
+        <h3>
+            Buscador GPS
+        </h3>
+    </div>
+	
+    <div data-role="content">
+        <h1 style="text-align:center">Mapa</h1><!---->
+		<div id="map"></div>
+        <div id="geolocation">Finding geolocation...</div>
+		<button id="boton1">Enviar datos de ubicación</button>
+    </div>
+	
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            Footer
+        </h3>
+    </div>
+</div>
+</body>
+</html>
